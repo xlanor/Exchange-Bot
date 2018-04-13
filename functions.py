@@ -81,7 +81,8 @@ def updateCoin(coin, coin_to_exchanges):
 		# Using a dictionary to store exchanges
 		exchanges = dict()
 		while(i < len(rows)):
-			exchange = (list(list(rows[i])[3].children)[0]).get_text()
+
+			exchange = (list(list(rows[i])[3].children)[1]).get_text()
 
 			# Remove $ and commas for volume and convert to int
 			vol = int(re.sub("[^\d\.]", "", (list(list(rows[i])[7].children)[1]).get_text()))
