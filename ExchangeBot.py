@@ -12,7 +12,9 @@ def main():
 
 	# Retrieve token from external file, enter the location of token.txt
 	# Token.txt should only contain 1 line which is the api token of your bot.
-	f = open('/Users/simon/Documents/Github/Exchange Bot/token.txt', 'r')
+	# NEVER EVER USE ABSOLUTE PATHING!!!!
+	# Use relative pathing for ease of deployment across different environments.
+	f = open('token.txt', 'r')
 	tokenId = f.readline()
 
 	# Create bot object and its corresponding updater and dispatcher
