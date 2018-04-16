@@ -9,4 +9,4 @@ script:
     - python setup.py install
 
 after_success:
-    - python3 src/ExchangeBot.py
+    - python3 ExchangeBot.py
