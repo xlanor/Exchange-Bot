@@ -1,8 +1,9 @@
 #! /usr/bin/env python3
 #-*- coding: utf-8 -*-
 ##
-# Cryptokitty setup.py
-#
+# ExchangeBot setup.py
+# @author STYJ
+# @contributor xlanor
 ##
 import os, sys,contextlib,pip
 
